@@ -1,0 +1,1034 @@
+/* import font families */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&family=Open+Sans:wght@300&family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #e1b7bf;
+    --secondaryColor: #59437a;
+    --mainTextColor: #d4c7e8;
+    --secondTextColor: #c262af;
+}
+
+body {
+    background-color: var(--mainColor);
+}
+
+
+/* common classses */
+
+.centralized-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* header design */
+
+header {
+    background-color: var(--mainColor);
+    padding: 15px 6%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #c262af;
+}
+
+.header-container .mobile-menu-icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.about-me {
+    position: relative;
+    background-color: var(--mainColor);
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 12% 0 12%;
+}
+
+.about-me-container>div:first-child {
+    order: 1;
+}
+
+.about-me-container img {
+    height: 590px;
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 22px 30px 33px;
+    order: 2;
+}
+
+.about-me-content .line {
+    display: inline-flex;
+    width: 100px;
+    height: 4px;
+    background-color: var(--secondaryColor);
+}
+
+.about-me-content h1 {
+    color: var(--secondaryColor);
+    font: 700 65px 'Montserrat', sans-serif;
+    line-height: 1;
+    padding: 30px 0;
+}
+
+.about-me-content p {
+    color: #111;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+.about-me-content p a {
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #111;
+}
+
+.about-me-content>a {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.about-me-content>a:hover {
+    background-color: var(--secondaryColor);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--secondaryColor);
+    padding: 80px 10% 100px 10%;
+    color: var(--mainTextColor);
+}
+
+.skills-container div {
+    width: 33%;
+    padding-right: 30px;
+}
+
+.skills-container p {
+    position: relative;
+    font: 400 20px 'Open Sans', sans-serif;
+    line-height: 1.4;
+}
+
+.skills-container p span {
+    position: absolute;
+    top: 13px;
+    left: -25px;
+    display: inline-flex;
+    width: 15px;
+    height: 1px;
+    margin-right: 5px;
+    background-color: var(--mainTextColor);
+}
+
+.skills-container h4 {
+    font: 400 24px 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+}
+
+.skills-container h1 {
+    font: 600 48px 'Open Sans', sans-serif;
+    padding: 10px 0 20px 0;
+    color: #fff;
+}
+
+.skills-container a {
+    display: inline-flex;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 12px 45px;
+    background-color: #c262af;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skills-container a:hover {
+    background-color: #fff;
+    color: #c262af;
+}
+
+.skills-cards-container {
+    width: 100%;
+    min-height: 210px;
+    background-color: var(--secondaryColor);
+}
+
+.skills-cards-container .space-box {
+    height: 131px;
+    background-color: var(--mainColor);
+}
+
+.skills-cards-container>div:last-child {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -160px auto -250px auto;
+}
+
+.skills-cards-container .skills-card-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 23%;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px 0 rgb(45 41 51 / 40%);
+}
+
+.skills-cards-container .skills-card-item div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #EFD6DB;
+    margin-bottom: 20px;
+}
+
+.skills-cards-container .skills-card-item p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondaryColor);
+}
+
+
+/* personal info and statistics section design */
+
+.statistics-content {
+    width: 60%;
+}
+
+.statistics-cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 30px;
+}
+
+.statistics-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 47%;
+    background-color: #fff;
+    border-top: 10px solid var(--secondaryColor);
+    padding: 30px 15px;
+    margin-bottom: 25px;
+}
+
+.statistics-cards .count {
+    font: 700 72px 'Montserrat', sans-serif;
+    color: #c262af;
+}
+
+.statistics-cards span.title {
+    font: 600 16px 'Open Sans', sans-serif;
+    color: #111;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.statistics-cards p {
+    font: 16px 'Open Sans', sans-serif;
+    color: #111;
+    text-align: center;
+}
+
+.statistics-text {
+    padding: 15px 0 20px 0;
+    color: var(--secondaryColor);
+}
+
+.statistics-text h2 {
+    font: bold 36px 'Open Sans', sans-serif;
+    line-height: 1;
+    padding-bottom: 20px;
+}
+
+.statistics-text p {
+    font: 18px 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+
+.statistics-text a {
+    display: inline-flex;
+    background-color: #c262af;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.8;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 150px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.personal-info-statictisc-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--mainColor);
+    padding: 60px 15% 0 15%;
+}
+
+.personal-info-content {
+    width: 40%;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    padding: 40px 30px;
+}
+
+.personal-info-content div {
+    padding: 20px 0;
+}
+
+.personal-info-content div h6 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font: 600 14px 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.personal-info-content div p {
+    letter-spacing: 1px;
+    font-family: 400 18px 'Poppins', sans-serif;
+    line-height: 1;
+}
+
+.personal-info-content div p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.personal-info-content div p a:hover {
+    color: var(--mainTextColor);
+    text-decoration: underline;
+}
+
+.personal-info-content div p i {
+    margin-right: 5px;
+}
+
+
+/* experiences section */
+
+.experiences-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--mainColor);
+    padding: 60px 18% 100px 18%;
+    color: var(--secondaryColor);
+    letter-spacing: 1px;
+}
+
+.experiences-container h1 {
+    font: 700 72px 'Poppins', sans-serif;
+}
+
+.experiences-container p {
+    font: 700 20px 'Poppins', sans-serif;
+    text-align: center;
+    padding: 30px 0 60px 0;
+}
+
+.experience-items-box {
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid var(--secondaryColor);
+    padding-bottom: 100px;
+}
+
+.experience-items-box div:first-child {
+    width: 40%;
+    padding-right: 30px;
+}
+
+.experience-items-box .experience-date-range p {
+    text-align: left;
+    font: 16px 'Poppins', sans-serif;
+}
+
+.experience-items-box .experience-title-description {
+    width: 80%;
+    padding: 30px 30px 0 30px;
+}
+
+.experience-items-box .experience-title-description h5 {
+    font: 700 20px 'Poppins', sans-serif;
+}
+
+.experience-items-box .experience-title-description p {
+    font: 500 20px 'Poppins', sans-serif;
+    line-height: 1.6;
+    text-align: left;
+    padding: 25px 0 20px 0;
+}
+
+.experience-items-box .experience-title-description a {
+    font: 700 20px 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.experiences-container .contact-me-btn a {
+    padding: 15px 90px !important;
+}
+
+.experiences-container .contact-me-btn a:hover {
+    background-color: var(--secondaryColor);
+}
+
+
+/* pricing section */
+
+.pricing-section-container {
+    background-color: var(--secondaryColor);
+    padding: 80px 20%;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+.pricing-section-container h4 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--mainTextColor);
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+}
+
+.pricing-section-container .company-slogan {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-section-container .company-work-description {
+    max-width: 520px;
+    text-align: center;
+    font: 20px 'Open Sans', sans-serif;
+    color: var(--mainTextColor);
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 60px 0;
+}
+
+.services-container ul {
+    list-style: none;
+}
+
+.services-container ul li {
+    font: 700 20px 'Open Sans', sans-serif;
+    line-height: 2;
+    padding: 5px 0;
+}
+
+.services-container ul li i {
+    color: var(--mainTextColor);
+    font-weight: 200;
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+.about-me-content>a,
+.pricing-section-container .dowload-btn a,
+.experiences-container .contact-me-btn a {
+    font: 700 18px 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+    text-decoration: none;
+    color: #fff;
+    background-color: #c262af;
+    padding: 22px 50px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+.pricing-section-container .dowload-btn a:hover {
+    color: var(--secondTextColor);
+    background-color: #fff;
+}
+
+
+/* service card design */
+
+.service-card-container {
+    position: relative;
+    min-height: 1000px;
+    background-color: var(--mainColor);
+}
+
+.service-card-container .space-box {
+    height: 300px;
+    margin-top: 350px;
+    background-color: var(--secondaryColor);
+}
+
+.service-card-container>div {
+    display: flex;
+    justify-content: center;
+}
+
+.service-card-container h2 {
+    font: 700 60px 'Montserrat', sans-serif;
+    color: #c262af;
+    padding-top: 60px;
+}
+
+.service-card-container .service-cards {
+    margin: -600px auto 0;
+}
+
+.service-card-container .service-cards>div {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+}
+
+.service-card-container .service-cards .card-container>div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 5px 5px 26px 0 rgb(0 0 0 / 20%);
+    padding: 30px 30px 80px 30px;
+}
+
+.service-card-container .service-cards .card-container>div.hidden-box-1 {
+    height: 130px;
+}
+
+.service-card-container .service-cards .card-container>div.hidden-box-2 {
+    height: 260px;
+}
+
+.service-card-container .service-cards .card-container img {
+    width: 100%;
+    height: 215px;
+}
+
+.service-card-container .service-cards .card-container .card-title {
+    font: 24px 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #111;
+    padding: 20px 0 25px 0;
+}
+
+.service-card-container .service-cards .card-container p {
+    font: 400 16px 'Open Sans', sans-serif;
+    line-height: 1.8;
+    color: #111;
+    text-align: center;
+}
+
+.service-card-container .service-cards .card-container a {
+    display: flex;
+    align-items: center;
+    font: 700 16px 'Open Sans', sans-serif;
+    color: #c262af;
+    text-decoration: none;
+    padding: 25px 0 5px 0;
+    border-bottom: 1px solid transparent;
+}
+
+.service-card-container .service-cards .card-container a:hover {
+    border-bottom: 1px solid #c262af;
+}
+
+.service-card-container .service-cards .card-container a span:last-child {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.service-card-container .service-cards .card-container a span svg:last-child {
+    position: absolute;
+    right: 0px;
+}
+
+.service-card-container .images-source {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    background-color: var(--mainColor);
+    font: 600 16px 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    color: #111;
+    padding-bottom: 3px;
+}
+
+.service-card-container .images-source a {
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #111;
+    margin-left: 5px;
+}
+
+
+/* form section design */
+
+.form-section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-section-container .form-container {
+    width: 50%;
+    padding: 130px 100px 120px 100px;
+    background-color: var(--mainColor);
+}
+
+.form-section-container .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 200px 60px 80px 60px;
+    background-color: var(--secondaryColor);
+}
+
+.form-section-container .form-container h2 {
+    font-size: 60px;
+    font-family: 'PT Sans', sans-serif;
+    color: var(--secondaryColor);
+}
+
+.form-section-container .form-container p {
+    font: 400 20px 'Open Sans', sans-serif;
+    line-height: 30px;
+    color: #808080;
+    padding: 20px 0;
+}
+
+.form-section-container .form-container input {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    color: #111;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.form-section-container .form-container input::placeholder {
+    color: #808080;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.form-section-container .form-container button {
+    width: 100%;
+    height: 72px;
+    background-color: var(--secondaryColor);
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding: 20px 30px;
+    transition: all 0.1s ease-in-out;
+}
+
+.form-section-container .form-container button:hover {
+    background-color: #c262af;
+}
+
+.form-section-container .section-content img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.form-section-container .section-content p:first-child {
+    font: 500 22px 'Open Sans', sans-serif;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--mainTextColor);
+}
+
+.form-section-container .section-content .img-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--mainColor);
+    letter-spacing: 1px;
+}
+
+.form-section-container .section-content .img-box div {
+    padding-left: 20px;
+}
+
+.form-section-container .section-content .img-box h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form-section-container .section-content .img-box span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-section-container .section-content>div:last-child p {
+    font: italic 600 16px 'Open Sans', sans-serif;
+}
+
+.form-section-container .section-content .images-source {
+    padding-top: 30px;
+    font: italic 600 16px 'Open Sans', sans-serif;
+    color: var(--mainTextColor);
+    padding-bottom: 5px;
+}
+
+.form-section-container .section-content .images-source a {
+    color: var(--mainTextColor);
+    text-decoration: none;
+    border-bottom: 1px solid var(--mainTextColor);
+}
+
+
+/* footer design */
+
+footer {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-color: #333;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+footer .footer-text-container {
+    font-size: 16px;
+    text-align: center;
+    padding: 50px 0;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+footer .created-by-container {
+    font-size: 13px;
+    padding: 40px 0;
+}
+
+@media screen and (min-width: 300px) and (max-width: 420px) {
+    .skills-cards-container .skills-card-item {
+        width: 85% !important;
+        margin: 0 auto;
+    }
+    .service-card-container>div:first-child {
+        min-height: 2000px;
+    }
+    .form-section-container .form-container {
+        margin-top: 100px;
+    }
+    .form-section-container .form-container h2 {
+        font-size: 30px;
+    }
+    .form-section-container .section-content .img-box {
+        flex-direction: column;
+    }
+    .form-section-container .section-content .img-box,
+    .form-section-container .section-content {
+        text-align: center;
+    }
+    .form-section-container .section-content .img-box h4 {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 575px) {
+    .skills-cards-container {
+        min-height: 365px !important;
+    }
+    .skills-cards-container .space-box {
+        height: 100px !important;
+    }
+    .skills-cards-container .skills-card-item p {
+        font-size: 16px;
+    }
+    .skills-cards-container>div:last-child {
+        margin: -200px auto -250px auto !important;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .about-me-container,
+    .skills-cards-container,
+    .skills-container,
+    .personal-info-statictisc-container,
+    .experience-items-box,
+    .services-container,
+    .form-section-container {
+        flex-direction: column;
+    }
+    .about-me-content h1 {
+        width: 100%;
+    }
+    .about-me-container>div:first-child {
+        order: 2;
+    }
+    .about-me-content {
+        order: 1;
+        padding: 0;
+    }
+    .about-me-content>a {
+        width: 250px;
+    }
+    .about-me-container img {
+        width: 100%;
+        height: 400px;
+    }
+    .about-me-content h1 {
+        font-size: 30px;
+    }
+    .skills-cards-container {
+        min-height: 880px;
+    }
+    .skills-cards-container .space-box {
+        height: 502px;
+    }
+    .skills-cards-container>div:last-child {
+        margin: -550px auto -250px auto;
+    }
+    .skills-cards-container .skills-card-item {
+        width: 47%;
+        margin-bottom: 30px;
+    }
+    .personal-info-statistisc-container {
+        padding: 60px 10% 0 10%;
+    }
+    .skills-container {
+        padding: 80px 15% 100px 15%;
+    }
+    .skills-container div {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+    .statistics-content {
+        width: 100%;
+    }
+    .statistics-cards-container {
+        padding-right: 0px;
+        flex-direction: column;
+    }
+    .statistics-cards {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .statistics-text h2 {
+        font-size: 30px;
+    }
+    .personal-info-content {
+        width: 100%;
+    }
+    .experiences-container {
+        padding: 60px 15% 100px 15%;
+        align-items: flex-start;
+    }
+    .experiences-container p {
+        text-align: left;
+        padding: 30px 0 30px 0;
+    }
+    .experiences-container h1 {
+        font-size: 30px;
+    }
+    .experience-items-box .experience-title-description {
+        width: 100%;
+        padding: 0px;
+    }
+    .pricing-section-container {
+        padding: 80px 10%;
+    }
+    .pricing-section-container .company-slogan,
+    .service-card-container h2 {
+        text-align: center;
+    }
+    .services-container {
+        align-items: flex-start;
+    }
+    .services-container ul {
+        margin-bottom: 30px;
+    }
+    .experience-items-box {
+        padding-bottom: 50px;
+    }
+    .experiences-container .contact-me-btn a {
+        padding: 15px 20px !important;
+    }
+    .statistics-text a {
+        padding: 15px 20px;
+    }
+    .service-card-container .service-cards>div {
+        grid-template-columns: 1fr;
+    }
+    .pricing-section-container .company-slogan,
+    .service-card-container h2 {
+        font-size: 30px;
+    }
+    .service-card-container .service-cards {
+        top: 8%;
+    }
+    .service-cards .card-container div {
+        margin-bottom: 30px;
+    }
+    .service-card-container .service-cards .card-container>div.hidden-box-1,
+    .service-card-container .service-cards .card-container>div.hidden-box-2 {
+        display: none;
+    }
+    .service-card-container>div:first-child {
+        min-height: 100px !important;
+    }
+    .service-card-container>div:nth-child(2) {
+        padding-bottom: 150px;
+    }
+    .form-section-container .form-container,
+    .form-section-container .section-content {
+        width: 100%;
+    }
+    .form-section-container .form-container {
+        padding: 0px 60px 80px 60px;
+    }
+    .form-section-container .section-content {
+        padding: 80px 60px;
+    }
+    .statistics-text a {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 690px) and (max-width: 992px) {
+    .about-me-container {
+        padding: 50px 0;
+    }
+    .about-me-container img {
+        height: 490px;
+    }
+    .about-me-content {
+        padding: 80px 22px 30px 0px;
+    }
+    .about-me-content h1 {
+        font-size: 35px;
+    }
+    .skills-container {
+        padding: 60px 5%;
+        flex-wrap: wrap;
+    }
+    .skills-container div {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+    .skills-cards-container {
+        min-height: 350px;
+    }
+    .skills-cards-container>div:last-child {
+        width: 60%;
+        margin: -250px auto -250px auto;
+    }
+    .skills-cards-container .skills-card-item {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+    .statistics-text a {
+        padding: 15px 100px;
+    }
+    .personal-info-statictisc-container {
+        flex-direction: column;
+        padding: 40px 10%;
+    }
+    .statistics-content,
+    .personal-info-content {
+        width: 100%;
+    }
+    .service-card-container .service-cards .card-container>div.hidden-box-1,
+    .service-card-container .service-cards .card-container>div.hidden-box-2 {
+        display: none;
+    }
+    .service-card-container .service-cards>div {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+    .form-section-container .form-container {
+        padding: 60px 40px;
+    }
+    .form-section-container .section-content {
+        padding: 140px 40px 40px 40px;
+    }
+    .pricing-section-container {
+        padding: 60px 5%;
+    }
+    .service-card-container h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .form-section-container .form-container h2 {
+        font-size: 40px;
+    }
+    .experiences-container {
+        padding: 40px 10%;
+    }
+}
